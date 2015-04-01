@@ -1,0 +1,54 @@
+﻿<Window x:Class="PL.AdminManagementWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Admin Management" Height="545" Width="810" ResizeMode="NoResize">
+    <Grid Height="509" Width="791">
+        <TabControl Height="511" HorizontalAlignment="Left" Name="tabAdminManagmentControl" VerticalAlignment="Top" Width="800">
+            <TabItem Header="User Management" Name="tabUserManage">
+                <Grid>
+                    <DataGrid AutoGenerateColumns="False" Height="366" HorizontalAlignment="Left" Margin="11,53,0,0" Name="dataGridUserManage" VerticalAlignment="Top" Width="767" AlternationCount="0" DataContext="{Binding}" CanUserResizeColumns="True">
+                        <DataGrid.Columns>
+                            <DataGridCheckBoxColumn Header="V" MinWidth="30"  Binding="{Binding IsChecked}"></DataGridCheckBoxColumn>
+                            <DataGridTextColumn Header="UserName" MinWidth="218" Binding="{Binding UserName}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="First Name" MinWidth="225" Binding="{Binding FirstName}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Last Name" MinWidth="225" Binding="{Binding LastName}"></DataGridTextColumn>
+                            <DataGridCheckBoxColumn Header="Is Admin?" MinWidth="30" Binding="{Binding IsAdmin}"></DataGridCheckBoxColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="191,438,0,0" Name="buttonSaveUser" VerticalAlignment="Top" Width="75" />
+                    <Button Content="Remove User" Height="23" HorizontalAlignment="Left" Margin="475,438,0,0" Name="buttonRemoveUser" VerticalAlignment="Top" Width="85" />
+                    <Label Content="Search by username:" Height="28" HorizontalAlignment="Left" Margin="33,19,0,0" Name="labelSearchUsername" VerticalAlignment="Top" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="187,21,0,0" Name="textBoxSearchUsername" VerticalAlignment="Top" Width="120" TextChanged="textBoxSearchUsername_TextChanged" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Discussion Management" Name="tabDiscussionManage">
+                <Grid>
+                    <DataGrid AlternationCount="0" AutoGenerateColumns="False" DataContext="{Binding}" Height="366" HorizontalAlignment="Left" Margin="11,53,0,0" Name="dataGridDiscussion" VerticalAlignment="Top" Width="764">
+                        <DataGrid.Columns>
+                            <DataGridCheckBoxColumn Header="V" MinWidth="30" Binding="{Binding IsChecked}"></DataGridCheckBoxColumn>
+                            <DataGridTextColumn Header="Discussion ID" MinWidth="40" Binding="{Binding ID}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Discussion Header" MinWidth="610" Binding="{Binding DissucsionHeader}"></DataGridTextColumn>
+                            <DataGridTemplateColumn>
+                                <DataGridTemplateColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <Image Source="/WpfApplication1;component/Images/lock.png" Height="20" Width="20"  />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.HeaderTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <CheckBox IsChecked="{Binding IsLocked}"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <!--<DataGridCheckBoxColumn Header="Is Locked?" MinWidth="30" Binding="{Binding IsLocked}"></DataGridCheckBoxColumn>-->
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="191,438,0,0" Name="buttonSaveDiscussion" VerticalAlignment="Top" Width="75" Click="buttonSaveDiscussion_Click" />
+                    <Button Content="Remove Discussion" Height="23" HorizontalAlignment="Left" Margin="475,438,0,0" Name="buttonRemoveDiscussion" VerticalAlignment="Top" Width="122" />
+                    <Label Content="Search by discussion header:" Height="28" HorizontalAlignment="Left" Margin="33,19,0,0" Name="labelSearchDiscussion" VerticalAlignment="Top" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="227,21,0,0" Name="textBoxSearchDiscussion" VerticalAlignment="Top" Width="120" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

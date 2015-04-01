@@ -1,0 +1,2 @@
+#1 - AskQuestionWindow.cs : buttonSubmit_Click : user does not exist
+#2 - AskQuestionWindow.cs : buttonSubmit_Click : currUserId < 0

@@ -1,0 +1,12 @@
+﻿<Window x:Class="PL.AnswerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Answer" Height="410" Width="446">
+    <Grid Height="356" Width="428">
+        <Button Content="Submit" Height="23" HorizontalAlignment="Left" Margin="238,321,0,0" Name="buttonSubmit" VerticalAlignment="Top" Width="75" />
+        <Button Content="Cancel" Height="23" HorizontalAlignment="Left" Margin="341,321,0,0" Name="buttonCancel" VerticalAlignment="Top" Width="75" />
+        <GroupBox Header="Answer" Height="289" HorizontalAlignment="Left" Margin="10,18,0,0" Name="groupBoxAnswer" VerticalAlignment="Top" Width="406">
+            <TextBox AcceptsReturn="True" Text="{Binding Notes, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="250" Width="381" />
+        </GroupBox>
+    </Grid>
+</Window>

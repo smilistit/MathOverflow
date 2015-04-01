@@ -1,0 +1,43 @@
+﻿<Window x:Class="PL.QuestionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Question" Height="594" Width="959">
+    <Grid Height="572">
+        <DataGrid AutoGenerateColumns="False" Height="265" HorizontalAlignment="Left" Margin="16,238,0,0" Name="questionsDataGrid" VerticalAlignment="Top" Width="879" SelectionChanged="questionsDataGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Image Source="/WpfApplication1;component/Images/Actions-rating-icon.png" Height="20" Width="20"  />
+                        </DataTemplate>                        
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                            <TextBlock Text="{Binding Rate}"/>
+                    </DataTemplate>
+                </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Answer" MinWidth="665" Binding="{Binding Answer}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Answered By" MinWidth="95" Binding="{Binding AnsweredBy}"></DataGridTextColumn>
+                <DataGridTemplateColumn Header="Rate Answer">
+                    <DataGridTemplateColumn.CellTemplate>                       
+                        <DataTemplate>
+                            <Button Name="mButtonFixThis" Height="20" Width="30"  Click="ButtonRateAnswer_Click">+1</Button>                           
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>                
+            </DataGrid.Columns>
+        </DataGrid>
+        <GroupBox Header="Title" Height="53" HorizontalAlignment="Left" Margin="10,10,0,0" Name="groupBoxTitle" VerticalAlignment="Top" Width="781">
+            <TextBox AcceptsReturn="True" Height="24" Text="{Binding Notes, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" />
+        </GroupBox>
+        <GroupBox Header="Question" Height="147" HorizontalAlignment="Left" Margin="12,82,0,0" Name="groupBoxQuestion" VerticalAlignment="Top" Width="779">
+            <TextBox AcceptsReturn="True" Text="{Binding Notes, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Width="756" Height="124" />
+        </GroupBox>
+        <Image Height="61" HorizontalAlignment="Left" Margin="850,12,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="62" Source="/WpfApplication1;component/Images/Actions-rating-icon.png" />
+        <TextBlock Height="17" HorizontalAlignment="Left" Margin="876,35,0,0" Name="textBlock1" Text="13" VerticalAlignment="Top" Width="19" />
+        <Button Content="Close" Height="23" HorizontalAlignment="Left" Margin="850,522,0,0" Name="buttonClose" VerticalAlignment="Top" Width="75" />
+        <Button Content="Answer" Height="23" HorizontalAlignment="Left" Margin="758,522,0,0" Name="buttonAnswer" VerticalAlignment="Top" Width="75" />
+        <Button Content="+1" Height="23" HorizontalAlignment="Right" Margin="0,522,228,0" Name="buttonRateQuestion" VerticalAlignment="Top" Width="75" />
+    </Grid>
+</Window>

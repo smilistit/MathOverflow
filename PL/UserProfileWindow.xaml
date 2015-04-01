@@ -1,0 +1,96 @@
+﻿<Window x:Class="PL.UserProfileWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="User Profile" Height="376" Width="839" ResizeMode="NoResize" Closing="Window_Closing">
+    <Grid Height="340" Width="824">
+        <TabControl Height="340" HorizontalAlignment="Left" Name="tabUserProfileControl" VerticalAlignment="Top" Width="824" SelectionChanged="tabUserProfileControl_SelectionChanged">
+            <TabItem Header="Profile Information" Name="tabUserProfile">
+                <Grid>
+                    <GroupBox Header="Username and Password" Height="168" HorizontalAlignment="Left" Margin="34,44,0,0" Name="groupBoxUsernameAndPass" VerticalAlignment="Top" Width="357">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="112*" />
+                                <ColumnDefinition Width="43*" />
+                                <ColumnDefinition Width="190*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Content="Username:" Height="28" HorizontalAlignment="Left" Margin="32,20,0,0" Name="labelUsernameProfile" VerticalAlignment="Top" />
+                            <Label Content="Password:" Height="28" HorizontalAlignment="Left" Margin="32,59,0,0" Name="labelPasswordProfile" VerticalAlignment="Top" />
+                            <!-- Add a function for the value Text="" -->
+                            <TextBox Height="23" HorizontalAlignment="Left" Margin="6,25,0,0" Name="textBoxUsername" VerticalAlignment="Top" Width="120" IsEnabled="False" Grid.Column="2" />
+                            <PasswordBox Height="23" HorizontalAlignment="Left" Margin="6,62,0,0" Name="passwordBoxProfile" VerticalAlignment="Top" Width="120" Grid.Column="2" DataContextChanged="passwordBoxProfile_DataContextChanged" />
+                            <Label Content="Confirm Password:" Height="28" HorizontalAlignment="Left" Margin="32,98,0,0" Name="labelConfirmPass" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+                            <PasswordBox Height="23" HorizontalAlignment="Left" Margin="6,101,0,0" Name="passwordBoxConfirmPass" VerticalAlignment="Top" Width="120" Grid.Column="2" DataContextChanged="passwordBoxConfirmPass_DataContextChanged" />
+                            <Image Height="24" HorizontalAlignment="Left" Margin="132,24,0,0" Name="usernameTooltipImage" Source="/WpfApplication1;component/Images/questionMark.jpg" Stretch="Fill" ToolTip="Only A-Z, a-z and numbers" VerticalAlignment="Top" Width="25" IsEnabled="False" Grid.Column="2" />
+                            <Image Height="24" HorizontalAlignment="Left" Margin="132,63,0,0" Name="passwordTooltipImage" Source="/WpfApplication1;component/Images/questionMark.jpg" Stretch="Fill" ToolTip="Only A-Z, a-z, symbols and numbers. 5-10 characters " VerticalAlignment="Top" Width="25" IsEnabled="False" Grid.Column="2" />
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Name" Height="124" HorizontalAlignment="Left" Margin="412,68,0,0" Name="groupBox1" VerticalAlignment="Top" Width="357">
+                        <Grid>
+                            <Label Content="First Name:" Height="28" HorizontalAlignment="Left" Margin="32,20,0,0" Name="labelFirstName" VerticalAlignment="Top" />
+                            <Label Content="Last Name:" Height="28" HorizontalAlignment="Left" Margin="32,59,0,0" Name="labelLastName" VerticalAlignment="Top" />
+                            <TextBox Height="23" HorizontalAlignment="Left" Margin="161,25,0,0" Name="textBoxFirstName" VerticalAlignment="Top" Width="120" DataContextChanged="textBoxFirstName_DataContextChanged" />
+                            <TextBox Height="23" HorizontalAlignment="Left" Margin="161,64,0,0" Name="textBoxLastName" VerticalAlignment="Top" Width="120" DataContextChanged="textBoxLastName_DataContextChanged" />
+                        </Grid>
+                    </GroupBox>
+                    <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="296,250,0,0" Name="buttonSave" VerticalAlignment="Top" Width="75" Click="buttonSave_Click" />
+                    <Button Content="Cancel" Height="23" HorizontalAlignment="Left" Margin="443,250,0,0" Name="buttonCancel" VerticalAlignment="Top" Width="75" Click="buttonCancel_Click" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="My Questions" Name="tabUserQuestions">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="557*" />
+                    </Grid.ColumnDefinitions>
+                    <DataGrid AutoGenerateColumns="False" Height="231" HorizontalAlignment="Left" Margin="3,53,0,0" Name="dataGridUserManage" VerticalAlignment="Top" Width="805" AlternationCount="0" DataContext="{Binding}" Grid.ColumnSpan="2">
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn>
+                                <DataGridTemplateColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <Image Source="/WpfApplication1;component/Images/Actions-rating-icon.png" Height="20" Width="20"  />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.HeaderTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Rate}"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>                            
+                            <DataGridTextColumn Header="Question Header" MinWidth="350" Binding="{Binding QuestionHeader}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Question Content" MinWidth="410" Binding="{Binding QuestionContent}"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="403,12,0,0" Name="searchMyQuestions" Text="Search in my questions" VerticalAlignment="Top" Width="141" Grid.Column="1" />
+                    <Label Content="My Question Rating :" Height="28" Margin="3,15,134,0" Name="label1" VerticalAlignment="Top" />
+                    <Image Height="33" HorizontalAlignment="Left" Margin="122,10,0,0" Name="image1" Source="/WpfApplication1;component/Images/Actions-rating-icon.png" Stretch="Fill" VerticalAlignment="Top" Width="30" />
+                    <Label Content="5" Height="22" HorizontalAlignment="Right" Margin="0,15,105,0" Name="label2" VerticalAlignment="Top" Width="16" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="My Answers" Name="tabUserAnswers">
+                <Grid>
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="659,12,0,0" Name="textBox3" Text="Search in my answers" VerticalAlignment="Top" Width="141" />
+                    <DataGrid AlternationCount="0" AutoGenerateColumns="False" DataContext="{Binding}" Height="233" HorizontalAlignment="Left" Margin="3,53,0,0" Name="dataGrid3" VerticalAlignment="Top" Width="805">
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Rate}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                                <DataGridTemplateColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <Image Height="20" Source="/WpfApplication1;component/Images/Actions-rating-icon.png" Width="20" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.HeaderTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Binding="{Binding QuestionHeader}" Header="Answer" MinWidth="760" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Label Content="My Question Rating :" Height="28" Margin="3,15,698,0" Name="label3" VerticalAlignment="Top" />
+                    <Image Height="33" HorizontalAlignment="Left" Margin="120,10,0,0" Name="image3" Source="/WpfApplication1;component/Images/Actions-rating-icon.png" Stretch="Fill" VerticalAlignment="Top" Width="30" />
+                    <Label Content="0" Height="22" HorizontalAlignment="Right" Margin="0,15,669,0" Name="label4" VerticalAlignment="Top" Width="16" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

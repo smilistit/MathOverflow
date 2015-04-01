@@ -1,0 +1,268 @@
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\AdminManagementWindow.baml
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\LoginWindow.baml
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\MainWindow.baml
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\AdvancedSearchWindow.baml
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\UserProfileWindow.baml
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\AskQuestionWindow.baml
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\AnswerWindow.baml
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\QuestionWindow.baml
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\AdminManagementWindow.g.cs
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\LoginWindow.g.cs
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\MainWindow.g.cs
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\AdvancedSearchWindow.g.cs
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\UserProfileWindow.g.cs
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\AskQuestionWindow.g.cs
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\AnswerWindow.g.cs
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\QuestionWindow.g.cs
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\App.g.cs
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\WpfApplication1_MarkupCompile.cache
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\WpfApplication1.g.resources
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\WpfApplication1.exe
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\WpfApplication1.pdb
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\bin\Release\WpfApplication1.exe
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\bin\Release\WpfApplication1.pdb
+C:\Documents and Settings\Sivan\my documents\visual studio 2010\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\PL.Properties.Resources.resources
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\WpfApplication1.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\WpfApplication1.pdb
+C:\Users\Yaara\Documents\Visual Studio 2013\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\WpfApplication1.exe
+C:\Users\Yaara\Documents\Visual Studio 2013\Projects\WpfApplication1\WpfApplication1\obj\x86\Release\WpfApplication1.pdb
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\WpfApplication1.exe
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\WpfApplication1.pdb
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\WpfApplication1.exe
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\WpfApplication1.pdb
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\AdminManagementWindow.baml
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\LoginWindow.baml
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\MainWindow.baml
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\AdvancedSearchWindow.baml
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\UserProfileWindow.baml
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\AskQuestionWindow.baml
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\AnswerWindow.baml
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\QuestionWindow.baml
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\AdminManagementWindow.g.cs
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\LoginWindow.g.cs
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\MainWindow.g.cs
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\AdvancedSearchWindow.g.cs
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\UserProfileWindow.g.cs
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\AskQuestionWindow.g.cs
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\AnswerWindow.g.cs
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\QuestionWindow.g.cs
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\App.g.cs
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\WpfApplication1_MarkupCompile.cache
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\WpfApplication1.g.resources
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\PL.Properties.Resources.resources
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\WpfApplication1.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\WpfApplication1.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\BL.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\DAL.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\BL.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\DAL.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\PL.csprojResolveAssemblyReference.cache
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\AdminManagementWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\LoginWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\MainWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\AdvancedSearchWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\UserProfileWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\AskQuestionWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\AnswerWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\QuestionWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\AdminManagementWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\LoginWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\MainWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\AdvancedSearchWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\UserProfileWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\AskQuestionWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\AnswerWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\QuestionWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\App.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\WpfApplication1_MarkupCompile.cache
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\WpfApplication1.g.resources
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\PL.Properties.Resources.resources
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\obj\x86\Release\PL.csproj.GenerateResource.Cache
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\WpfApplication1.exe.config
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\WpfApplication1.exe.config
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\BL.exe
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\DAL.exe
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\BL.pdb
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\DAL.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\ConsoleApplication1.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\EntityFramework.dll
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\ConsoleApplication1.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\EntityFramework.xml
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\ConsoleApplication1.exe
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\EntityFramework.dll
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\ConsoleApplication1.pdb
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\WpfApplication1\WpfApplication1\bin\Release\EntityFramework.xml
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\WpfApplication1.exe.config
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\WpfApplication1.exe
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\WpfApplication1.pdb
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\BL.exe
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\DAL.exe
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\ConsoleApplication1.exe
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\EntityFramework.dll
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\BL.pdb
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\DAL.pdb
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\ConsoleApplication1.pdb
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\EntityFramework.xml
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\AdminManagementWindow.baml
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\LoginWindow.baml
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\MainWindow.baml
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\AdvancedSearchWindow.baml
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\UserProfileWindow.baml
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\AskQuestionWindow.baml
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\AnswerWindow.baml
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\QuestionWindow.baml
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\AdminManagementWindow.g.cs
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\LoginWindow.g.cs
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\MainWindow.g.cs
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\AdvancedSearchWindow.g.cs
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\UserProfileWindow.g.cs
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\AskQuestionWindow.g.cs
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\AnswerWindow.g.cs
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\QuestionWindow.g.cs
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\App.g.cs
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\WpfApplication1_MarkupCompile.cache
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\WpfApplication1.g.resources
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\PL.Properties.Resources.resources
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\WpfApplication1.exe
+C:\Documents and Settings\Sivan\My Documents\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\WpfApplication1.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\PL.csprojResolveAssemblyReference.cache
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\AdminManagementWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\LoginWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\MainWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\AdvancedSearchWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\UserProfileWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\AskQuestionWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\AnswerWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\QuestionWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\AdminManagementWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\LoginWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\MainWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\AdvancedSearchWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\UserProfileWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\AskQuestionWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\AnswerWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\QuestionWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\App.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\WpfApplication1_MarkupCompile.cache
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\WpfApplication1.g.resources
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\PL.Properties.Resources.resources
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\PL.csproj.GenerateResource.Cache
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\WpfApplication1.exe.config
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\WpfApplication1.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\WpfApplication1.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\BL.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\DAL.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\EntityFramework.dll
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\BL.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\DAL.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\bin\Release\EntityFramework.xml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\WpfApplication1.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\Backup4\WpfApplication1\obj\x86\Release\WpfApplication1.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\bin\Release\PL.exe.config
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\bin\Release\PL.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\bin\Release\PL.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\bin\Release\BL.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\bin\Release\DAL.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\bin\Release\EntityFramework.dll
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\bin\Release\BL.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\bin\Release\DAL.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\bin\Release\EntityFramework.xml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\PL.csprojResolveAssemblyReference.cache
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\AdminManagementWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\LoginWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\MainWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\AdvancedSearchWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\UserProfileWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\AskQuestionWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\AnswerWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\QuestionWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\AdminManagementWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\LoginWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\MainWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\AdvancedSearchWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\UserProfileWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\AskQuestionWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\AnswerWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\QuestionWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\App.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\PL_MarkupCompile.cache
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\PL.g.resources
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\PL.Properties.Resources.resources
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\PL.csproj.GenerateResource.Cache
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\PL.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\WpfApplication1\obj\x86\Release\PL.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\bin\Release\PL.exe.config
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\bin\Release\PL.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\bin\Release\PL.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\bin\Release\BL.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\bin\Release\DAL.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\bin\Release\EntityFramework.dll
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\bin\Release\BL.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\bin\Release\DAL.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\bin\Release\EntityFramework.xml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\PL.csprojResolveAssemblyReference.cache
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\AdminManagementWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\LoginWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\MainWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\AdvancedSearchWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\UserProfileWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\AskQuestionWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\AnswerWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\QuestionWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\AdminManagementWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\LoginWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\MainWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\AdvancedSearchWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\UserProfileWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\AskQuestionWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\AnswerWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\QuestionWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\App.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\PL_MarkupCompile.cache
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\PL.g.resources
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\PL.Properties.Resources.resources
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\PL.csproj.GenerateResource.Cache
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\PL.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1 - Copy\PL\obj\x86\Release\PL.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\bin\Release\PL.exe.config
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\bin\Release\PL.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\bin\Release\PL.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\bin\Release\BL.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\bin\Release\DAL.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\bin\Release\EntityFramework.dll
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\bin\Release\BL.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\bin\Release\DAL.pdb
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\bin\Release\EntityFramework.xml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\PL.csprojResolveAssemblyReference.cache
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\AdminManagementWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\LoginWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\MainWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\AdvancedSearchWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\UserProfileWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\AskQuestionWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\AnswerWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\QuestionWindow.baml
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\AdminManagementWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\LoginWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\MainWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\AdvancedSearchWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\UserProfileWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\AskQuestionWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\AnswerWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\QuestionWindow.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\App.g.cs
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\PL_MarkupCompile.cache
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\PL.g.resources
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\PL.Properties.Resources.resources
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\PL.csproj.GenerateResource.Cache
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\PL.exe
+C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\PL\obj\x86\Release\PL.pdb
