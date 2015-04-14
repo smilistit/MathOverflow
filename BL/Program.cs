@@ -33,23 +33,17 @@ namespace BL
             #region create users
             UserBL u1 = new UserBL("username" + (new Random().Next()), "123456");
             // u1 should be created
-            if (u1 == null)
-                Console.WriteLine("ERROR: Couldn't create u1.");
-            else
+            if (UserBL.UserBlValid(u1))
                 Console.WriteLine("Valid: u1 was created.");
+            else
+                Console.WriteLine("ERROR: Couldn't create u1.");
             
-            UserBL u2 = new UserBL(u1);
-            // u2 should be created
-            if (u2 == null)
-                Console.WriteLine("ERROR: Couldn't create u2.");
-            else
+            UserBL u2 = new UserBL(u1, u1.Username);
+            // u2 should be created with an invalid username (same as u1)
+            if (UserBL.UserBlValid(u2))
                 Console.WriteLine("Valid: u2 was created.");
-
-            // u2's username is invalid, so Id = -1
-            if (u2.Id == -1)
-                Console.WriteLine("Valid: u2 was created without a username so the username is invalid.");
             else
-                Console.WriteLine("ERROR: u2 was created with a valid username, though it shouldn't have a username at all.");
+                Console.WriteLine("ERROR: Couldn't create u2.");
 
             // change u2's username
             if (u2.SetUsername("username" + (new Random().Next())))
@@ -77,25 +71,25 @@ namespace BL
             Console.WriteLine("Info: u1.Username = " + u1.Username);
             Console.WriteLine("Info: u2.Username = " + u2.Username);
 
-            int u1Id = UserBL.GetUserId(u1.Username);
-            int u2Id = UserBL.GetUserId(u2.Username);
+            int u1Id = UserBL.GetUserIdByUsername(u1.Username);
+            int u2Id = UserBL.GetUserIdByUsername(u2.Username);
             Console.WriteLine("Info: u1.Id = " + u1Id);
             Console.WriteLine("Info: u2.Id = " + u2Id);
             #endregion
 
 
             #region GetUserByUserName
-            UserBL u1ByUsername = UserBL.GetUserByUsername(u1.Username);
-            UserBL u2ByUsername = UserBL.GetUserByUsername(u2.Username);
+            UserBL u1ByUsername = UserBL.GetUserBlByUsername(u1.Username);
+            UserBL u2ByUsername = UserBL.GetUserBlByUsername(u2.Username);
 
-            // if u1.Id == u1ByUsername.Id than it's the same user
-            if (u1.Id == u1ByUsername.Id)
+            // if they are the same user
+            if (u1.Equals(u1ByUsername))
                 Console.WriteLine("Valid: The users u1 and u1ByUsername are equal (has the same Id).");
             else
                 Console.WriteLine("ERROR: The users u1 and u1ByUsername aren't equal.");
 
-            // if u2.Id == u2ByUsername.Id than it's the same user
-            if (u2.Id == u2ByUsername.Id)
+            // if they are the same user
+            if (u2.Equals(u2ByUsername))
                 Console.WriteLine("Valid: The users u2 and u2ByUsername are equal (has the same Id).");
             else
                 Console.WriteLine("ERROR: The users u2 and u2ByUsername aren't equal.");
@@ -126,7 +120,7 @@ namespace BL
             #region ChangeFirstName
             Console.WriteLine("Info: Before changing the first name:\n\tu1.FirstName = " + (String.IsNullOrEmpty(u1.FirstName)?"Empty":u1.FirstName));
             // change the first name to 'firstName' followed by a random number
-            u1.ChangeFirstName("firstName" + (new Random().Next()));
+            u1.FirstName = "firstName" + (new Random().Next());
             if (String.IsNullOrEmpty(u1.FirstName))
                 Console.WriteLine("ERROR: u1's first name didn't update. u1.FirstName = Empty");
             else
@@ -137,7 +131,7 @@ namespace BL
             #region ChangeLastName
             Console.WriteLine("Info: Before changing the last name:\n\tu1.LastName = " + (String.IsNullOrEmpty(u1.LastName)?"Empty":u1.LastName));
             // change the last name to 'lastName' followed by a random number
-            u1.ChangeFirstName("lastName" + (new Random().Next()));
+            u1.LastName = "lastName" + (new Random().Next());
             if (String.IsNullOrEmpty(u1.LastName))
                 Console.WriteLine("ERROR: u1's last name didn't update. u1.LastName = Empty");
             else
@@ -148,7 +142,7 @@ namespace BL
             #region ChangePassword
             Console.WriteLine("Info: Before changing the password:\n\tu1.Password = " + (String.IsNullOrEmpty(u1.Password)?"Empty":u1.Password));
             // change the password to 'password' followed by a random number
-            u1.ChangeFirstName("password" + (new Random().Next()));
+            u1.Password = "password" + (new Random().Next());
             if (String.IsNullOrEmpty(u1.Password))
                 Console.WriteLine("ERROR: u1's password didn't update. u1.Password = Empty");
             else

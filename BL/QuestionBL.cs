@@ -64,7 +64,7 @@ namespace BL
         {
             if (String.IsNullOrWhiteSpace(QuestionCategory) || String.IsNullOrWhiteSpace(QuestionHeader) || String.IsNullOrWhiteSpace(QuestionBody) || AskedByUserName == null)
                 return false;
-            return DAL.QuestionDAL.CreateQuestion(QuestionCategory, QuestionHeader, QuestionBody, UserBL.GetUserId(AskedByUserName));
+            return DAL.QuestionDAL.CreateQuestion(QuestionCategory, QuestionHeader, QuestionBody, UserBL.GetUserIdByUsername(AskedByUserName));
         }
 
         /// <summary>

@@ -49,3 +49,12 @@ C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\DAL\bin\Releas
 C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\DAL\bin\Release\EntityFramework.SqlServer.xml
 C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\DAL\obj\Release\DAL.exe
 C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\DAL\obj\Release\DAL.pdb
+C:\Users\Yaara\Documents\GitHub\MathOverflow\DAL\bin\Release\DAL.exe.config
+C:\Users\Yaara\Documents\GitHub\MathOverflow\DAL\bin\Release\DAL.exe
+C:\Users\Yaara\Documents\GitHub\MathOverflow\DAL\bin\Release\DAL.pdb
+C:\Users\Yaara\Documents\GitHub\MathOverflow\DAL\bin\Release\EntityFramework.dll
+C:\Users\Yaara\Documents\GitHub\MathOverflow\DAL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Yaara\Documents\GitHub\MathOverflow\DAL\bin\Release\EntityFramework.xml
+C:\Users\Yaara\Documents\GitHub\MathOverflow\DAL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Yaara\Documents\GitHub\MathOverflow\DAL\obj\Release\DAL.exe
+C:\Users\Yaara\Documents\GitHub\MathOverflow\DAL\obj\Release\DAL.pdb

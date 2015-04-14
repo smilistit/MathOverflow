@@ -84,3 +84,15 @@ C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\BL\bin\Release
 C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\BL\obj\x86\Release\BL.csprojResolveAssemblyReference.cache
 C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\BL\obj\x86\Release\BL.exe
 C:\Users\Yaara\Dropbox\Sivan&Yaara\Code\MathOverflow_Backup1-Main\BL\obj\x86\Release\BL.pdb
+C:\Users\Yaara\Documents\GitHub\MathOverflow\BL\bin\Release\EntityFramework.dll
+C:\Users\Yaara\Documents\GitHub\MathOverflow\BL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Yaara\Documents\GitHub\MathOverflow\BL\bin\Release\BL.exe.config
+C:\Users\Yaara\Documents\GitHub\MathOverflow\BL\bin\Release\BL.exe
+C:\Users\Yaara\Documents\GitHub\MathOverflow\BL\bin\Release\BL.pdb
+C:\Users\Yaara\Documents\GitHub\MathOverflow\BL\bin\Release\DAL.exe
+C:\Users\Yaara\Documents\GitHub\MathOverflow\BL\bin\Release\DAL.pdb
+C:\Users\Yaara\Documents\GitHub\MathOverflow\BL\bin\Release\EntityFramework.xml
+C:\Users\Yaara\Documents\GitHub\MathOverflow\BL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Yaara\Documents\GitHub\MathOverflow\BL\obj\x86\Release\BL.csprojResolveAssemblyReference.cache
+C:\Users\Yaara\Documents\GitHub\MathOverflow\BL\obj\x86\Release\BL.exe
+C:\Users\Yaara\Documents\GitHub\MathOverflow\BL\obj\x86\Release\BL.pdb

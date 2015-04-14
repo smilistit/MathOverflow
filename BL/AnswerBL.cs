@@ -47,7 +47,7 @@ namespace BL
         {
             if (String.IsNullOrWhiteSpace(AnswerBody) || QuestionId < 0 || AnsweredByUserName == null)
                 return false;
-            return DAL.AnswerDAL.CreateAnswer(AnswerBody, QuestionId, UserBL.GetUserId(AnsweredByUserName));
+            return DAL.AnswerDAL.CreateAnswer(AnswerBody, QuestionId, UserBL.GetUserIdByUsername(AnsweredByUserName));
         }
 
         /// <summary>

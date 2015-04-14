@@ -14,19 +14,14 @@ namespace DAL
         /// <param name="firstName"></param>
         /// <param name="lastName"></param>
         /// <param name="password"></param>
-        /// <param name="MyQuestionsRate"></param>
-        /// <param name="MyAnswersRate"></param>
         /// <param name="isAdmin"></param>
         /// <returns></returns>
-        public static int CreateUser(string username, string firstName, string lastName, string password, int MyQuestionsRate, int MyAnswersRate, bool isAdmin = false)
+        public static int CreateUser(string username, string firstName, string lastName, string password, bool isAdmin = false)
         {
             using (var db = new DAL.MathOverFlowContext())
             {
-                List<User> users = (from u in db.Users
-                                    where u.UserName == username
-                                    select u).ToList<User>();
                 // if the username already exist
-                if (users.Count > 0)
+                if (!ValidateUniqueUserName(username))
                     return -1;
                 User user = new User { UserName = username, FirstName = firstName, LastName = lastName, Password = password, IsAdmin = isAdmin };
                 db.Users.Add(user);
@@ -40,7 +35,7 @@ namespace DAL
         /// </summary>
         /// <param name="username"></param>
         /// <returns></returns>
-        public static User GetUserByUserName(string username)
+        public static User GetUserByUsername(string username)
         {
             using (var db = new MathOverFlowContext())
             {
@@ -66,7 +61,7 @@ namespace DAL
             }
         }
 
-        public static List<User> GetAllUsersByUsername(string username) // TODO: What is it needed for? The username is unique
+        public static List<User> GetAllUsersByUsername(string username) // TODO: What is it used for? The username is unique so there can't be many of them
         {
             List<User> userList = new List<User>();
 
@@ -136,7 +131,6 @@ namespace DAL
         /// <returns></returns>
         public static bool UpdateUserPassword(int userId, string password)
         {
-
             using (var db = new MathOverFlowContext())
             {
                 User user = db.Users.Find(userId);
@@ -152,9 +146,24 @@ namespace DAL
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="state"></param>
+        /// <returns></returns>
         public static bool UpdateAdminState(int userId, bool state)
         {
-
+            using (var db = new MathOverFlowContext())
+            {
+                User user = db.Users.Find(userId);
+                if (user == null)
+                    return false;
+                user.IsAdmin = state;
+                db.Entry(user).State = System.Data.Entity.EntityState.Modified;
+                db.SaveChanges();
+                return true;
+            }
         }
 
         public static int GetQuestionRatePerUser(int questionId) // TODO: why is it on the UserDAL class? shouldn't it move to QuestionDAL?
@@ -241,7 +250,7 @@ namespace DAL
         }
 
         /// <summary>
-        /// 
+        /// Return true if the username is unique, false otherwise
         /// </summary>
         /// <param name="username"></param>
         /// <returns>True if the username is unique, false otherwise</returns>
