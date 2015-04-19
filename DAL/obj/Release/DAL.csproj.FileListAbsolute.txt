@@ -58,3 +58,4 @@ C:\Users\Yaara\Documents\GitHub\MathOverflow\DAL\bin\Release\EntityFramework.xml
 C:\Users\Yaara\Documents\GitHub\MathOverflow\DAL\bin\Release\EntityFramework.SqlServer.xml
 C:\Users\Yaara\Documents\GitHub\MathOverflow\DAL\obj\Release\DAL.exe
 C:\Users\Yaara\Documents\GitHub\MathOverflow\DAL\obj\Release\DAL.pdb
+C:\Users\Yaara\Documents\GitHub\MathOverflow\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache

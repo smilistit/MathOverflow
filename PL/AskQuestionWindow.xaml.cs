@@ -55,14 +55,16 @@ namespace PL
             // the fields are valid
             else
             {
-                QuestionBL question = new QuestionBL(qCatagory, qHeader, qBody, currUser.CurrUserName);
+                // Yaara: I've commented out lines 59 and 66 (and replaced it witht he line 67) since I've changed the method to static and it didn't compile
+                //QuestionBL question = new QuestionBL(qCatagory, qHeader, qBody, currUser.CurrUserName);
 
                 int currUserId = CurrentUser.GetUserID(currUser.CurrUserName);
 
                 if (currUserId >= 0)
                 {
                     // try to upload the question to DB, and make sure it uploaded
-                    if (!question.UploadQuestionToDB(qCatagory, qHeader, qBody, currUserId))
+                    //if (!question.UploadQuestionToDB(qCatagory, qHeader, qBody, currUserId))
+                    if (!QuestionBL.UploadQuestionToDB(qCatagory, qHeader, qBody, currUserId))
                     {
                         // open err msg - the question didn't upload
                         MessageBox.Show("There was an internal error and the question couldn't upload.\nPlease try again", "Ask a Question - Couldn't Upload Question", MessageBoxButton.OK, MessageBoxImage.Error);

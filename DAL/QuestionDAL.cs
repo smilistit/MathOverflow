@@ -14,8 +14,8 @@ namespace DAL
         /// <param name="header"></param>
         /// <param name="body"></param>
         /// <param name="userId"></param>
-        /// <returns></returns>
-        public static bool CreateQuestion(string category, string header, string body, int userId)
+        /// <returns>The question Id or -1, if the quaestion was not created</returns>
+        public static int CreateQuestion(string category, string header, string body, int userId)
         {
             using (var db = new MathOverFlowContext())
             {
@@ -32,26 +32,41 @@ namespace DAL
                 db.Questions.Add(question);
                 db.SaveChanges();
 
-                return true;
+                if (question.Id > 0)
+                    return question.Id;
+                else
+                    return -1;
             }
         }
 
         /// <summary>
         /// 
         /// </summary>
-        /// <returns></returns>
-        public static List<Question> GetLastQuestion()
+        /// <returns>A list of questions from the last month</returns>
+        public static List<Question> GetLastMonthQuestions()
         {
-            List<Question> questionList = new List<Question>();
+            List<Question> questionsList = new List<Question>();
+            DateTime lastMonth = DateTime.Now.AddMonths(-1);
 
             using (var db = new MathOverFlowContext())
             {
-                questionList = (from q in db.Questions
-                               where q.Date >= DateTime.Now.AddMonths(-1)
-                               select q).ToList<Question>();
+                questionsList = db.Questions.Where<Question>(q => q.Date >= lastMonth).ToList<Question>();
             }
 
-            return questionList;
+            return questionsList;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="questionId"></param>
+        /// <returns></returns>
+        public static Question GetQuestionById(int questionId)
+        {
+            using (var db = new MathOverFlowContext())
+            {
+                return db.Questions.Find(questionId);
+            }
         }
 
         /// <summary>
@@ -61,16 +76,14 @@ namespace DAL
         /// <returns></returns>
         public static List<Question> GetQuestionsByHeader(string header)
         {
-            List<Question> questionList = new List<Question>();
+            List<Question> questionsList = new List<Question>();
 
             using (var db = new MathOverFlowContext())
             {
-                questionList = (from q in db.Questions
-                                where q.Header.Contains(header)
-                                select q).ToList<Question>();
+                questionsList = db.Questions.Where<Question>(q => q.Header.Contains(header)).ToList<Question>();
             }
 
-            return questionList;
+            return questionsList;
         }
 
         /// <summary>
@@ -80,19 +93,17 @@ namespace DAL
         /// <returns></returns>
         public static List<Question> GetQuestionsByUserName(string username)
         {
-            List<Question> questionList = new List<Question>();
+            List<Question> questionsList = new List<Question>();
 
             using (var db = new MathOverFlowContext())
             {
                 User user = db.Users.Where(x => x.UserName == username).FirstOrDefault();
                 if (user == null)
-                    return questionList;
-                questionList = (from q in db.Questions
-                                where q.UserId == user.Id
-                                select q).ToList<Question>();
+                    return questionsList;
+                questionsList = db.Questions.Where<Question>(q => q.UserId == user.Id).ToList<Question>();
             }
 
-            return questionList;
+            return questionsList;
         }
 
         /// <summary>
@@ -103,16 +114,14 @@ namespace DAL
         /// <returns></returns>
         public static List<Question> GetQuestionsByDates(DateTime fromDate, DateTime toDate)
         {
-            List<Question> questionList = new List<Question>();
+            List<Question> questionsList = new List<Question>();
 
             using (var db = new MathOverFlowContext())
             {
-                questionList = (from q in db.Questions
-                                where q.Date >= fromDate && q.Date <= toDate
-                                select q).ToList<Question>();
+                questionsList = db.Questions.Where<Question>(q => q.Date >= fromDate && q.Date <= toDate).ToList<Question>();
             }
 
-            return questionList;
+            return questionsList;
         }
 
         /// <summary>
@@ -122,16 +131,17 @@ namespace DAL
         /// <returns></returns>
         public static List<Question> GetQuestionsByCategory(string category)
         {
-            List<Question> questionList = new List<Question>();
+            List<Question> questionsList = new List<Question>();
 
             using (var db = new MathOverFlowContext())
             {
-                questionList = (from q in db.Questions
-                                where q.Category == category
-                                select q).ToList<Question>();
+                questionsList = db.Questions.Where<Question>(q => q.Category == category).ToList<Question>();
+                //questionsList = (from q in db.Questions
+                //                where q.Category == category
+                //                select q).ToList<Question>();
             }
 
-            return questionList;
+            return questionsList;
         }
       
         /// <summary>

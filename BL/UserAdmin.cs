@@ -7,8 +7,8 @@ namespace BL
 {
     public class UserAdmin : UserBL
     {
-        public UserAdmin(string userName, string firstName, string lastName, string password)
-            : base(userName, password, firstName, lastName)
+        public UserAdmin(string username, string firstName, string lastName = "", string password = "")
+            : base(username, password, firstName, lastName)
         {
 
         }

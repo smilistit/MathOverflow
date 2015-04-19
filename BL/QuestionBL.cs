@@ -20,16 +20,42 @@ namespace BL
         /// <param name="questionCatagory"></param>
         /// <param name="questionHeader"></param>
         /// <param name="questionBody"></param>
-        /// <param name="askedByUserName"></param>
-        public QuestionBL(string questionCatagory, string questionHeader, string questionBody, string askedByUserName)
+        /// <param name="username"></param>
+        public QuestionBL(string questionCatagory, string questionHeader, string questionBody, string username)
         {
-            QuestionCategory = questionCatagory;
-            QuestionHeader = questionHeader;
-            QuestionBody = questionBody;
-            _askedByUserName = askedByUserName;
-            _questionUploadDate = DateTime.Now;
+            // only if the user exist - we'll update the username field, else the question id is invalid
+            if (UserBL.GetUserIdByUsername(username) > 0)
+                _username = username;
+            else
+                _id = -1;
+
+            Category = questionCatagory;
+            Header = questionHeader;
+            Body = questionBody;
+            _uploadDate = DateTime.Now;
             Rate = 0;
             _isLocked = false;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="question"></param>
+        private QuestionBL(Question question)
+        {
+            if (question != null)
+            {
+                _id = question.Id;
+                _username = UserBL.GetUserById(question.UserId).Username;
+                _uploadDate = question.Date;
+                Category = question.Category;
+                Header = question.Header;
+                Body = question.Body;
+                Rate = question.Rate;
+                _isLocked = question.IsLocked;
+            }
+            else
+                _id = -1;
         }
 
         #region public methods
@@ -37,10 +63,11 @@ namespace BL
         /// <summary>
         /// 
         /// </summary>
-        /// <returns></returns>
-        public List<Question> GetLastQuestions()
+        /// <returns>A list of questionsBL from the last month</returns>
+        public static List<QuestionBL> GetLastQuestions()
         {
-            return DAL.QuestionDAL.GetLastQuestion();
+            List<Question> questions = DAL.QuestionDAL.GetLastMonthQuestions();
+            return ConvertQuestionListToQuestionBlList(questions);
         }
         
         /// <summary>
@@ -51,9 +78,12 @@ namespace BL
         /// <param name="body"></param>
         /// <param name="userID"></param>
         /// <returns></returns>
-        public bool UploadQuestionToDB(string category, string header, string body, int userId)
+        public static bool UploadQuestionToDB(string category, string header, string body, int userId)
         {
-            return DAL.QuestionDAL.CreateQuestion(category, header, body, userId);
+            if (String.IsNullOrWhiteSpace(category) || String.IsNullOrWhiteSpace(header) || String.IsNullOrWhiteSpace(body) || userId < 1)
+                return false;
+            int id = DAL.QuestionDAL.CreateQuestion(category, header, body, userId);
+            return id > 0;
         }
 
         /// <summary>
@@ -62,9 +92,10 @@ namespace BL
         /// <returns></returns>
         public bool UploadQuestionToDB()
         {
-            if (String.IsNullOrWhiteSpace(QuestionCategory) || String.IsNullOrWhiteSpace(QuestionHeader) || String.IsNullOrWhiteSpace(QuestionBody) || AskedByUserName == null)
+            if (String.IsNullOrWhiteSpace(Category) || String.IsNullOrWhiteSpace(Header) || String.IsNullOrWhiteSpace(Body) || Username == null)
                 return false;
-            return DAL.QuestionDAL.CreateQuestion(QuestionCategory, QuestionHeader, QuestionBody, UserBL.GetUserIdByUsername(AskedByUserName));
+            _id = DAL.QuestionDAL.CreateQuestion(Category, Header, Body, UserBL.GetUserIdByUsername(Username));
+            return _id > 0;
         }
 
         /// <summary>
@@ -72,19 +103,38 @@ namespace BL
         /// </summary>
         /// <param name="header">The header to search by.</param>
         /// <returns>Question list which contains the given header.</returns>
-        public List<Question> GetQuestionsByHeader(string header)
+        public static List<QuestionBL> GetQuestionsByHeader(string header)
         {
-            return DAL.QuestionDAL.GetQuestionsByHeader(header);
+            List<Question> questions = DAL.QuestionDAL.GetQuestionsByHeader(header);
+            return ConvertQuestionListToQuestionBlList(questions);
+        }
+
+
+        /// <summary>
+        /// Convert a list of Question to a list of QuestionBL
+        /// </summary>
+        /// <param name="questions"></param>
+        /// <returns></returns>
+        private static List<QuestionBL> ConvertQuestionListToQuestionBlList(List<Question> questions)
+        {
+            List<QuestionBL> questionsBL = new List<QuestionBL>();
+            foreach (Question q in questions)
+            {
+                QuestionBL qBL = new QuestionBL(q);
+                questionsBL.Add(qBL);
+            }
+            return questionsBL;
         }
 
         /// <summary>
         /// Gets qusetions list written by a given user name.
         /// </summary>
-        /// <param name="userName">The user name to search by</param>
-        /// <returns>Question list whos written by the given user name</returns>
-        public List<Question> GetQuestionsByUserName(string userName)
+        /// <param name="username">The user name to search by</param>
+        /// <returns>QuestionBL list whos written by the given user name</returns>
+        public static List<QuestionBL> GetQuestionsByUsername(string username)
         {
-            return DAL.QuestionDAL.GetQuestionsByUserName(userName);
+            List<Question> questions = DAL.QuestionDAL.GetQuestionsByUserName(username);
+            return ConvertQuestionListToQuestionBlList(questions);
         }
 
         /// <summary>
@@ -93,9 +143,10 @@ namespace BL
         /// <param name="fromDate"></param>
         /// <param name="toDate"></param>
         /// <returns></returns>
-        public List<Question> GetQuestionsByDates(DateTime fromDate, DateTime toDate)
-        {                                                              
-            return DAL.QuestionDAL.GetQuestionsByDates(fromDate, toDate);                    
+        public static List<QuestionBL> GetQuestionsByDates(DateTime fromDate, DateTime toDate)
+        {
+            List<Question> questions = DAL.QuestionDAL.GetQuestionsByDates(fromDate, toDate);
+            return ConvertQuestionListToQuestionBlList(questions);
         }
 
         /// <summary>
@@ -103,74 +154,111 @@ namespace BL
         /// </summary>
         /// <param name="category"></param>
         /// <returns></returns>
-        public List<Question> GetQuestionsByCategory(string category)
+        public static List<QuestionBL> GetQuestionsByCategory(string category)
         {
-            return DAL.QuestionDAL.GetQuestionsByCategory(category);
+            List<Question> questions = DAL.QuestionDAL.GetQuestionsByCategory(category);
+            return ConvertQuestionListToQuestionBlList(questions); 
         }
 
-       
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="rate"></param>
-        /// <returns></returns>
-        public bool UpdateQuestionRate(int questionId, int rate)
+       /// <summary>
+       /// Update the question rate after it was uploaded to the DB
+       /// </summary>
+       /// <param name="rate"></param>
+       /// <returns></returns>
+        public bool UpdateQuestionRate(int rate)
         {         
-            return DAL.QuestionDAL.UpdateQuestionRate(questionId, rate);
+            if (DAL.QuestionDAL.UpdateQuestionRate(Id, rate))
+            {
+                Rate = rate;
+                return true;
+            }
+            return false;
         }
 
         /// <summary>
         /// Lock the question if the user is an admin and updates in DB
         /// </summary>
         /// <param name="admin"></param>
-        public bool LockQuestion(UserAdmin admin, int questionId)
+        /// <returns></returns>
+        public bool LockQuestion(UserAdmin admin)
         {
-            if (admin is UserAdmin)
+            if (admin is UserAdmin && DAL.QuestionDAL.UpdateQuestionLockStateInDB(true, Id))
             {
                 _isLocked = true;                
-
-                if (DAL.QuestionDAL.UpdateQuestionLockStateInDB(_isLocked, questionId))
-                {
-                    return true;
-                }
-                return false;
+                return true;
             }
-
             return false;
         }
 
         /// <summary>
         /// Unlock the question if the user is an admin and updates in DB
         /// </summary>
+        /// <param name="admin"></param>
         /// <returns></returns>
-        public bool UnlockQuestion(UserAdmin admin, int questionId)
+        public bool UnlockQuestion(UserAdmin admin)
         {
-            if (admin is UserAdmin)
+            if (admin is UserAdmin && DAL.QuestionDAL.UpdateQuestionLockStateInDB(false, Id))
             {
                 _isLocked = false;
-
-                if (DAL.QuestionDAL.UpdateQuestionLockStateInDB(_isLocked, questionId))
-                {
-                    return true;
-                }
+                return true;
             }
-
             return false;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="questionBL"></param>
+        /// <returns>True if the username was valid when creating the questionBL, false otherwise</returns>
+        public static bool QuestionBlValid(QuestionBL questionBL)
+        {
+            return (questionBL._id == -1 ? false : true);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns></returns>
+        public bool SetUsername(string username)
+        {
+            UserBL userBL = UserBL.GetUserBlByUsername(username);
+            // the question's username will only be updated once, so we only set it if it's currently empty and that the username exist in the DB
+            if (String.IsNullOrEmpty(_username) && userBL != null)
+            {
+                _username = username;
+                return true;
+            }
+            else
+                return false;
+        }
+
         #endregion
     
-        private int _id;
+        // getters and setters
+
+        private int _id = 0;
         public int Id { get { return _id; } }
 
-        public string QuestionCategory { get; set; }
-        public string QuestionHeader { get; set; }
-        public string QuestionBody { get; set; }
+        public string Category { get; set; }
+        public string Header { get; set; }
+        public string Body { get; set; }
 
-        private string _askedByUserName;
-        public string AskedByUserName { get; set; }
+        private string _username = String.Empty;
+        public string Username
+        {
+            get
+            {
+                Question question = DAL.QuestionDAL.GetQuestionById(Id);
+                if (question == null)
+                    return _username;
+                UserBL userBL = UserBL.GetUserById(question.UserId);
+                return userBL.Username;
+            }
+        }
 
-        private DateTime _questionUploadDate;
-        public DateTime QuestionUploadDate { get; set; }
+        private DateTime? _uploadDate;
+        public DateTime? UploadDate { get { return _uploadDate; } }
 
         public int Rate { get; set; }
 

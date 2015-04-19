@@ -15,7 +15,7 @@ namespace DAL
         /// <param name="lastName"></param>
         /// <param name="password"></param>
         /// <param name="isAdmin"></param>
-        /// <returns></returns>
+        /// <returns>The user ID</returns>
         public static int CreateUser(string username, string firstName, string lastName, string password, bool isAdmin = false)
         {
             using (var db = new DAL.MathOverFlowContext())

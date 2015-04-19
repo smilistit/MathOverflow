@@ -88,10 +88,10 @@ namespace BL
         public static int GetUserIdByUsername(string username)
         {
             User user = DAL.UserDAL.GetUserByUsername(username);
-            if (user != null)
-                return user.Id;
-            else
+            if (user == null)
                 return -1;
+            else
+                return user.Id;
         }
 
         /// <summary>
@@ -101,6 +101,8 @@ namespace BL
         /// <returns></returns>
         public static UserBL GetUserBlByUsername(string username)
         {
+            if (String.IsNullOrEmpty(username))
+                return null;
             User user = DAL.UserDAL.GetUserByUsername(username);
             if (user == null)
                 return null;
@@ -181,6 +183,19 @@ namespace BL
             }
             else
                 return false;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        public static UserBL GetUserById(int userId)
+        {
+            User user = DAL.UserDAL.GetUserById(userId);
+            if (user == null)
+                return null;
+            return new UserBL(user);
         }
 
 
