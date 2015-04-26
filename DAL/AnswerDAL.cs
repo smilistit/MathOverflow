@@ -14,7 +14,7 @@ namespace DAL
         /// <param name="questionId"></param>
         /// <param name="userId"></param>
         /// <returns></returns>
-        public static bool CreateAnswer(string body, int questionId, int userId)
+        public static int CreateAnswer(string body, int questionId, int userId)
         {
             using (var db = new MathOverFlowContext())
             {
@@ -22,7 +22,7 @@ namespace DAL
                 Question question = db.Questions.Find(questionId);
 
                 if (user == null || question == null)
-                    return false;
+                    return -1;
 
                 Answer answer = new Answer
                 {
@@ -30,13 +30,27 @@ namespace DAL
                     QuestionId = questionId,
                     UserId = userId,
                     Rate = 0,
-                    //Date = DateTime.Now
+                    Date = DateTime.Now
                 };
 
                 db.Answers.Add(answer);
                 db.SaveChanges();
 
-                return true;
+                return answer.Id;
+            }
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="answerId"></param>
+        /// <returns></returns>
+        public static Answer GetAnswerById(int answerId)
+        {
+            using (var db = new MathOverFlowContext())
+            {
+                return db.Answers.Find(answerId);
             }
         }
 
@@ -45,7 +59,7 @@ namespace DAL
         /// </summary>
         /// <param name="questionID"></param>
         /// <returns></returns>
-        public static List<Answer> GetAnswerByQuestionID(int questionID)
+        public static List<Answer> GetAnswerByQuestionId(int questionID)
         {
             List<Answer> answerList = new List<Answer>();
 

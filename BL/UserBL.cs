@@ -109,7 +109,7 @@ namespace BL
            return new UserBL(user);
         }
 
-        public static List<User> GetAllUsersByUsername(string username) // TODO: like in the UserDAL - I'm not really sure what it's for since the username is unique
+        public static List<User> GetAllUsersByUsername(string username) // TODO: Ya'ara: like in the UserDAL - I'm not really sure what it's for since the username is unique
         {
             return DAL.UserDAL.GetAllUsersByUsername(username);
         }
@@ -119,17 +119,17 @@ namespace BL
             return DAL.UserDAL.AuthenticateUser(username, password);
         }
 
-        public static int GetQuestionRate(int questionId) // TODO: why is it on the UserBL class? shouldn't it move to AnswerBL?
+        public static int GetQuestionRate(int questionId) // TODO: Ya'ara: why is it on the UserBL class? shouldn't it move to AnswerBL?
         {
             return DAL.UserDAL.GetQuestionRatePerUser(questionId);
         }
 
-        public static int GetAnswerRate(int answerId) // TODO: why is it on the UserBL class? shouldn't it move to QuestionBL?
+        public static int GetAnswerRate(int answerId) // TODO: Ya'ara: why is it on the UserBL class? shouldn't it move to QuestionBL?
         {
             return DAL.UserDAL.GetAnswerRatePerUser(answerId);
         }
 
-        public int GetSpecificQuestionAndAnswerRate(int questionId, int answerId) // TODO: not really sure what's it's for. I think is should be deleted
+        public int GetSpecificQuestionAndAnswerRate(int questionId, int answerId) // TODO: Ya'ara: not really sure what's it's for. I think is should be deleted
         {
             return DAL.UserDAL.GetSpecificQuestionAndAnswerRate(questionId, answerId);
         }
@@ -190,7 +190,7 @@ namespace BL
         /// </summary>
         /// <param name="userId"></param>
         /// <returns></returns>
-        public static UserBL GetUserById(int userId)
+        public static UserBL GetUserBlById(int userId)
         {
             User user = DAL.UserDAL.GetUserById(userId);
             if (user == null)

@@ -46,7 +46,8 @@ namespace BL
             if (question != null)
             {
                 _id = question.Id;
-                _username = UserBL.GetUserById(question.UserId).Username;
+                // the username must be valid - otherwise it wouldn't have been uploaded to the DB
+                _username = UserBL.GetUserBlById(question.UserId).Username;
                 _uploadDate = question.Date;
                 Category = question.Category;
                 Header = question.Header;
@@ -94,8 +95,11 @@ namespace BL
         {
             if (String.IsNullOrWhiteSpace(Category) || String.IsNullOrWhiteSpace(Header) || String.IsNullOrWhiteSpace(Body) || Username == null)
                 return false;
-            _id = DAL.QuestionDAL.CreateQuestion(Category, Header, Body, UserBL.GetUserIdByUsername(Username));
-            return _id > 0;
+            int uId = UserBL.GetUserIdByUsername(Username);
+            if (uId < 1)
+                return false;
+            _id = DAL.QuestionDAL.CreateQuestion(Category, Header, Body, uId);
+            return Id > 0;
         }
 
         /// <summary>
@@ -233,6 +237,19 @@ namespace BL
                 return false;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="questionId"></param>
+        /// <returns></returns>
+        public static QuestionBL GetQuestionBlById(int questionId)
+        {
+            Question question = DAL.QuestionDAL.GetQuestionById(questionId);
+            if (question == null)
+                return null;
+            return new QuestionBL(question);
+        }
+
         #endregion
     
         // getters and setters
@@ -252,7 +269,7 @@ namespace BL
                 Question question = DAL.QuestionDAL.GetQuestionById(Id);
                 if (question == null)
                     return _username;
-                UserBL userBL = UserBL.GetUserById(question.UserId);
+                UserBL userBL = UserBL.GetUserBlById(question.UserId);
                 return userBL.Username;
             }
         }

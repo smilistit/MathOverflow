@@ -11,9 +11,11 @@ namespace BL
         {
             try
             {
-                //TestUserBL();
+                TestUserBL();
 
                 TestQuestionBL();
+
+                TestAnswerBL();
             }
             catch (Exception ex)
             {
@@ -221,9 +223,20 @@ namespace BL
 
 
                 #region GetQuestionsByHeader
-                List<QuestionBL> questionsByHeader = QuestionBL.GetQuestionsByHeader(q1Header); // TODO: we should make sure it finds a substring as well
+                List<QuestionBL> questionsByHeader = QuestionBL.GetQuestionsByHeader(q1Header);
                 Console.WriteLine("All of the questions with the header: \"" + q1Header + "\" are:");
                 foreach (QuestionBL q in questionsByHeader)
+                {
+                    Console.WriteLine("Header: " + q.Header);
+                    Console.WriteLine("Body: " + q.Body);
+                    Console.WriteLine("Upload Date: " + q.UploadDate);
+                }
+                #endregion
+
+                #region GetQuestionsByHeader - Substring
+                List<QuestionBL> questionsByHeaderSubstring = QuestionBL.GetQuestionsByHeader(q1Header.Substring(3));
+                Console.WriteLine("All of the questions with the header: \"" + q1Header.Substring(3) + "\" are:");
+                foreach (QuestionBL q in questionsByHeaderSubstring)
                 {
                     Console.WriteLine("Header: " + q.Header);
                     Console.WriteLine("Body: " + q.Body);
@@ -301,6 +314,121 @@ namespace BL
                 #endregion
             }
             catch(Exception ex)
+            {
+                Console.WriteLine("There was an exception:\n" + ex.Message);
+                if (ex.InnerException.InnerException != null)
+                    Console.WriteLine("Inner exception:\n" + ex.InnerException.InnerException.Message);
+            }
+        }
+
+
+        private static void TestAnswerBL()
+        {
+            try
+            {
+                #region create answers
+                UserBL u1 = new UserBL("username" + (new Random().Next()), "654321");
+                u1.UploadUserToDB();
+                QuestionBL q1 = new QuestionBL("Combinatorics", "Some Combinatorics Header", "Some combinatorics question body", u1.Username);
+                q1.UploadQuestionToDB();
+                AnswerBL a1 = new AnswerBL(q1.Id, "Some answer's body", u1.Username);
+                // a1 should be created
+                if (AnswerBL.AnswerBlValid(a1))
+                    Console.WriteLine("Valid: a1 was created.");
+                else
+                    Console.WriteLine("ERROR: Couldn't create a1.");
+
+                AnswerBL a2 = new AnswerBL(-1, "Some answer's body", u1.Username);
+                // a2's questionId is invalid
+                if (AnswerBL.AnswerBlValid(a2))
+                    Console.WriteLine("ERROR: a2 is valid though the question ID isn't valid.");
+                else
+                    Console.WriteLine("Valid: a2 is invalid, since the question ID is valid.");
+
+                // a3's username is invalid
+                AnswerBL a3 = new AnswerBL(q1.Id, "Some answer's body", "jkhefrnlv");
+                if (AnswerBL.AnswerBlValid(a3))
+                    Console.WriteLine("ERROR: a3 is valid though the username does not exist.");
+                else
+                    Console.WriteLine("Valid: a3 is invalid, since the username does not exist.");
+                #endregion
+
+
+                #region SetQuestionId
+                // set a2's question Id
+                if (a2.SetQuestionId(q1.Id))
+                    Console.WriteLine("Valid: a2's question Id was updated to q1's Id.");
+                else
+                    Console.WriteLine("ERROR: Couldn't update a2's questionId to q1's Id.");
+                #endregion
+
+
+                #region setUsername
+                // set a3's username
+                if (a3.SetUsername(u1.Username))
+                    Console.WriteLine("Valid: a3's username was updated to u1's username.");
+                else
+                    Console.WriteLine("ERROR: Couldn't update a3's username to u1's username.");
+                #endregion
+
+
+                #region UploadQuestionToDB
+                // a1 should be uploaded
+                if (a1.UploadAnswerToDB())
+                    Console.WriteLine("Valid: a1 was uploaded to the DB.");
+                else
+                    Console.WriteLine("ERROR: Couldn't upload a1 to the DB.");
+
+                // a2 should be uploaded
+                if (a2.UploadAnswerToDB())
+                    Console.WriteLine("Valid: a2 was uploaded to the DB.");
+                else
+                    Console.WriteLine("ERROR: Couldn't upload a2 to the DB.");
+
+                int uId = UserBL.GetUserIdByUsername(a3.Username);
+                // upload an answer with only values (in this case - a3)
+                if (AnswerBL.UploadAnswerToDB(a3.Body, q1.Id, uId))
+                    Console.WriteLine("Valid: a3 was uploaded to the DB.");
+                else
+                    Console.WriteLine("ERROR: Couldn't upload a3 to the DB.");
+                #endregion
+
+
+                #region GetAnswersByQuestionId
+                List<AnswerBL> answersByQuestionId = AnswerBL.GetAnswersByQuestionId(q1.Id);
+                Console.WriteLine("All of the answers with the questionId: " + q1.Id + " (which is q1's Id) are:");
+                foreach (AnswerBL a in answersByQuestionId)
+                {
+                    Console.WriteLine("Username: " + a.Username);
+                    Console.WriteLine("Body: " + a.Body);
+                    Console.WriteLine("Upload Date: " + a.UploadDate);
+                }
+                #endregion
+
+
+                #region GetAnswersByUserName
+                List<AnswerBL> answersByUsername = AnswerBL.GetAnswersByUserName(u1.Username);
+                Console.WriteLine("Info: u1.Username = " + u1.Username);
+                Console.WriteLine("All of the answers of the username \"" + u1.Username + "\" are:");
+                foreach (AnswerBL a in answersByUsername)
+                {
+                    Console.WriteLine("AnswerId: " + a.Id);
+                    Console.WriteLine("Body: " + a.Body);
+                    Console.WriteLine("Upload Date: " + a.UploadDate);
+                }
+                #endregion
+
+
+                #region UpdateAnswerRate
+                Console.WriteLine("Info: a1's current rate is: " + a1.Rate);
+                // a1 should be updated
+                if (a1.UpdateAnswerRate(23))
+                    Console.WriteLine("Valid: a1's rate was updated to:" + a1.Rate);
+                else
+                    Console.WriteLine("ERROR: a1's rate wasn't updated to 23.");
+                #endregion
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine("There was an exception:\n" + ex.Message);
                 if (ex.InnerException.InnerException != null)

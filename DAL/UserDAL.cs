@@ -61,7 +61,7 @@ namespace DAL
             }
         }
 
-        public static List<User> GetAllUsersByUsername(string username) // TODO: What is it used for? The username is unique so there can't be many of them
+        public static List<User> GetAllUsersByUsername(string username) // TODO: Ya'ara: What is it used for? The username is unique so there can't be many of them
         {
             List<User> userList = new List<User>();
 
@@ -166,7 +166,7 @@ namespace DAL
             }
         }
 
-        public static int GetQuestionRatePerUser(int questionId) // TODO: why is it on the UserDAL class? shouldn't it move to QuestionDAL?
+        public static int GetQuestionRatePerUser(int questionId) // TODO: Ya'ara: why is it on the UserDAL class? shouldn't it move to QuestionDAL?
         {
             using (var db = new MathOverFlowContext())
             {
@@ -179,7 +179,7 @@ namespace DAL
             }
         }
 
-        public static int GetAnswerRatePerUser(int answerId) // TODO: why is it on the UserDAL class? shouldn't it move to AnswerDAL?
+        public static int GetAnswerRatePerUser(int answerId) // TODO: Ya'ara: why is it on the UserDAL class? shouldn't it move to AnswerDAL?
         {
             using (var db = new MathOverFlowContext())
             {
@@ -192,7 +192,7 @@ namespace DAL
             }
         }
 
-        public static int GetSpecificQuestionAndAnswerRate(int questionId, int answerId) // TODO: not really sure what's it's for. I think is should be deleted
+        public static int GetSpecificQuestionAndAnswerRate(int questionId, int answerId) // TODO: Ya'ara: not really sure what's it's for. I think is should be deleted
         {
             using (var db = new MathOverFlowContext())
             {
